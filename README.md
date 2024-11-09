@@ -15,7 +15,7 @@ AlpBase is available in the following editions:
 | Edition   | Devices | Application                                                                             |
 |-----------| ------- |-----------------------------------------------------------------------------------------|
 | Superˡⁱᵍʰᵗ (32bit) | Raspberry Pi Zero version 1 (32bit processor - one core), old Raspberry Pi 2 boards | Power saving embedded applications, very light for minimum CPU usage, for one-core boards. |
-| Justˡⁱᵍʰᵗ | Raspberry Pi 3 and 4 models | For building single board based servers. c                                              |
+| Justˡⁱᵍʰᵗ | Raspberry Pi 3 and 4 models | For building single board based servers.                                        |
 | BeDesktop | Raspberry Pi 5 | For your desktop! |
 
 

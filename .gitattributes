@@ -1,1 +1,2 @@
 *.iso.gz filter=lfs diff=lfs merge=lfs -text
+downloads/alpbase-just_light-24r1.iso.gz filter=lfs diff=lfs merge=lfs -text

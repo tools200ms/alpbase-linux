@@ -9,6 +9,8 @@ The installation is trivial as it requires:
 
 Finally after automatic reboot system is ready for user to login and finish installation by providing keyboard type, time zone, hostname and repository mirror.
 
+See video [Alpbase auto-installation followed by configuration](https://youtu.be/srpOnk9L1qM).
+
 See [Installation](#installation) section.
 
 AlpBase is available in the following editions:

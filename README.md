@@ -1,20 +1,17 @@
 # AlpBase Linux
 
-**AlpBase** is an [Alpine Linux](https://www.alpinelinux.org/)-based distribution specifically designed for ARM devices, featured by headless setup. As it is based on Alpine, AlpBase is lightweight, enabling fast boot times. Most importantly, it is built with a security focus.
+**AlpBase** is an [Alpine Linux](https://www.alpinelinux.org/)-based distribution specifically designed for ARM devices, featured by headless setup. As it is based on Alpine, AlpBase is lightweight, enabling fast boot times.
 
 The installation is trivial as it requires: 
-- flashing a memory card with AlpBase image
-- powering on system
-- waiting a bit as AlpBase grows file system, does initialization and checks
+- Flashing a memory card with AlpBase image.
+- Powering on system.
+- Waiting a bit as AlpBase grows file system, does initialization and checks.
 
 Finally after automatic reboot system is ready for user to login and finish installation by providing keyboard type, time zone, hostname and repository mirror.
 
-See video [Alpbase auto-installation followed by configuration](https://youtu.be/srpOnk9L1qM).
-
-See [Installation](#installation) section.
+See video: [![Alpbase auto-installation followed by configuration](https://img.youtube.com/vi/srpOnk9L1qM/0.jpg)](https://youtu.be/srpOnk9L1qM).
 
 AlpBase is available in the following editions:
-**(available soon)**
 
 | Edition                                                                                                                                                   | Devices | Application                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------| ------- |-----------------------------------------------------------------------------------------|

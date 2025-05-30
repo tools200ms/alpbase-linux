@@ -18,7 +18,7 @@ AlpBase is available in the following editions:
 | Edition                                                                                                                                                   | Devices | Application                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------| ------- |-----------------------------------------------------------------------------------------|
 | Superˡⁱᵍʰᵗ (32bit)                                                                                                                                        | Raspberry Pi Zero version 1 (32bit processor - one core), old Raspberry Pi 2 boards | Power saving embedded applications, very light for minimum CPU usage, for one-core boards. |
-| Justˡⁱᵍʰᵗ [download latest .iso.gz (68 MiB)](https://github.com/tools200ms/alpbase-linux/raw/refs/heads/release/downloads/alpbase-just_light-24r1.iso.gz) | Raspberry Pi 3 and 4 models | For building single board based servers.                                        |
+| Justˡⁱᵍʰᵗ [download latest .iso.gz (66 MiB)](https://github.com/tools200ms/alpbase-linux/raw/refs/heads/release/downloads/alpbase-just_light-25r1.iso.gz) | Raspberry Pi 3 and 4 models | For building single board based servers.                                        |
 | BeDesktop                                                                                                                                                 | Raspberry Pi 5 | For your desktop! |
 
 
@@ -45,6 +45,7 @@ Once card is flashed, put it to device and boot. AlpBase at a boot time does par
 
 ### Justˡⁱᵍʰᵗ
 
+- [alpbase-just_light-25r1.iso.gz](https://github.com/tools200ms/alpbase-linux/raw/refs/heads/release/downloads/alpbase-just_light-25r1.iso.gz) (released 28th may. 2025)
 - [alpbase-just_light-24r1.iso.gz](https://github.com/tools200ms/alpbase-linux/raw/refs/heads/release/downloads/alpbase-just_light-24r1.iso.gz) (released 20th nov. 2024)
 
 ### BeDesktop
@@ -54,16 +55,18 @@ Once card is flashed, put it to device and boot. AlpBase at a boot time does par
 # Development plan
 
 The list of the features to be added with next releases: 
-- Add cron to be pre-configures, with: 
-  - 'fstrim -a' for periodic trimming (complementary to 'discard' option that is on, but is a bit lazy)
-- Change fileststem from default 'ext4' to flash friendly fs: 
+- Set 'discard' mount flag for root and boot partitions.
+- Add cron to be pre-configured with: 
+  - 'fstrim -a' for periodic trimming (additionally to 'discard' flag')
+- Change filesystem from default 'ext4' to flash-friendly: 
   - `jffs2` for SuperLight and JustLight
   - `f2fs` for BeDesktop
 - Automatically create swap (but partition, not file). Swap space is multiple of available RAM.
   - for SuperLight: there is noswap
   - for JustLight: 1.1x of available RAM
   - for BeDesktop: 1.5x of available RAM
-  Swap partition over swap file is preffered as system will be able to trim in opposition to swap file
+  
+  Swap partition is preferred over swap file as a system will be able to trim unused swap space.
 
 # References
 
